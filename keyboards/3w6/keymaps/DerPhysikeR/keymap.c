@@ -47,13 +47,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX,          XXXXXXX,          XXXXXXX,          XXXXXXX,           XXXXXXX,                  KC_EQL,   KC_7,          KC_8,          KC_9,         XXXXXXX,
         LGUI_T(KC_BSLS),  LALT_T(KC_LBRC),  LSFT_T(KC_RBRC),  LCTL_T(KC_QUOTE),  XXXXXXX,                  KC_MINS,  RCTL_T(KC_4),  RSFT_T(KC_5),  RALT_T(KC_6), RGUI_T(XXXXXXX),
         XXXXXXX,          XXXXXXX,          XXXXXXX,          KC_GRV,           XXXXXXX,                   KC_0,     KC_1,          KC_2,          KC_3,         XXXXXXX,
-                                                                     XXXXXXX, XXXXXXX, XXXXXXX,      KC_PEQL, KC_PENT, XXXXXXX
+                                             LT(_NAV, KC_ESC), LT(_NUM, KC_SPC), LT(_SYM, KC_TAB),     LT(_SYM, KC_BSPC), LT(_NUM, KC_ENT), LT(_NAV, KC_DEL)
     ),
     [_NAV] = LAYOUT(
         XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,                                KC_HOME, KC_PGDN, KC_PGUP, KC_END,   XXXXXXX,
         LGUI_T(XXXXXXX), LALT_T(KC_LEFT), LSFT_T(KC_DOWN), LCTL_T(KC_RGHT), XXXXXXX,                                KC_LEFT, RCTL_T(KC_DOWN), RSFT_T(KC_UP),   RALT_T(KC_RGHT),  RGUI_T(XXXXXXX),
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
-                                        XXXXXXX, XXXXXXX, XXXXXXX,      XXXXXXX, MO(_CFG), XXXXXXX         
+                                             LT(_NAV, KC_ESC), LT(_NUM, KC_SPC), LT(_SYM, KC_TAB),     LT(_SYM, KC_BSPC), LT(_NUM, KC_ENT), LT(_NAV, KC_DEL)
     ),
     [_SYM] = LAYOUT(
         KC_GRV , KC_CIRC,   KC_AT,  KC_DLR, KC_TILD,                                KC_F12, KC_F7, KC_F8, KC_F9, XXXXXXX,
