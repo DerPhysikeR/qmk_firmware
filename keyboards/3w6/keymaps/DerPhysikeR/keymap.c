@@ -68,3 +68,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                              LT(_NAV, KC_ESC), LT(_NUM, KC_SPC), LT(_SYM, KC_TAB),     LT(_SYM, KC_BSPC), LT(_NUM, KC_ENT), LT(_NAV, KC_DEL)
     ),
 };
+
+ 
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(_NUM, KC_SPC):
+            return true;
+        default:
+            return false;
+    }
+}
